@@ -2,25 +2,29 @@ import React from 'react'
 import {Box, Typography, Paper, Button } from '@mui/material'
 
 import { NextLinkComposed } from '../utils/Link';
+import ThemeToggleButton from '@/components/ThemeToggleButton';
 
 const Home = () => {
   return (
-    <Box>
-      <Typography variant="h2" color="primary">Home</Typography>
-      <Typography variant="h2">Home</Typography>
-      <Paper>
+    <main>
+      <Box>
+        <Typography variant="h2" color="primary">Home</Typography>
+        <Typography variant="h2">Home</Typography>
+        <Paper>
 
-        Otro texto
+          Otro texto
 
-      </Paper>
+        </Paper>
 
-      <Button variant="contained" color="primary" component={NextLinkComposed} to='/about'>
+        <Button variant="contained" color="primary" component={NextLinkComposed} to='/about'>
 
-        Go to about
+          Go to about
+          
+        </Button>
+        <ThemeToggleButton />
         
-      </Button>
-      
-    </Box>
+      </Box>
+    </main>
   )
 }
 
